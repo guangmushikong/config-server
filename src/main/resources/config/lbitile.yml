@@ -1,0 +1,10 @@
+################### DataSource Configuration ##########################
+spring:
+  table:
+    china_city_polygon: s_ods_city_simplify
+    t_tilemapservice: t_tilemapservice
+    t_tilemap: t_tilemap
+    t_tileset: t_tileset
+    t_log: t_log
+    t_project: t_project
+    t_dataset: t_dataset

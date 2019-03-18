@@ -1,16 +1,6 @@
-################### DataSource Configuration ##########################
-spring:
-  table:
-    china_city_polygon: s_ods_city_simplify
-    t_tilemapservice: t_tilemapservice
-    t_tilemap: t_tilemap
-    t_tileset: t_tileset
-    t_log: t_log
-    t_project: t_project
-    t_dataset: t_dataset
 ################### Service Configuration ##########################
 service:
-  mapserver: 111.202.109.210:8080
+  mapserver: localhost:8080
   geoserver: localhost:8888
   tiledata: /home/dev/data/tile
 ################### OSS Configuration ##########################

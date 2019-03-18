@@ -1,17 +1,6 @@
 ################### DataSource Configuration ##########################
 spring:
   datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://172.25.28.116:5432/postgres
     username: postgres
     password: Cateye@2018
-    hikari:
-      pool-name: CatHikariCP
-      auto-commit: true
-      connection-test-query: SELECT 1
-      connection-timeout: 30000
-      idle-timeout: 30000
-      max-lifetime: 1800000
-      minimum-idle: 5
-      maximum-pool-size: 15
