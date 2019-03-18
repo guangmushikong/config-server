@@ -1,0 +1,24 @@
+server:
+  port: 12002
+spring:
+  application:
+    name: config-server
+  security:
+    user:
+      name: AKIAPYRXF3VSENILA42Q
+      password: e3iNcgZ+nuVjnfzHQq2HHxoZd3VySliXyG6vFruP
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+################### 注册中心
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@192.168.15.43:12001/eureka/
