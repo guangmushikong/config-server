@@ -1,6 +1,0 @@
-################### DataSource Configuration ##########################
-spring:
-  datasource:
-    url: jdbc:postgresql://172.25.28.116:5432/postgres
-    username: postgres
-    password: Cateye@2018
